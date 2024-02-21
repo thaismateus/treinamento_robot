@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-21T18:33:40.683271" rpa="false" schemaversion="5">
+<suite id="s1" name="Ex01" source="C:\Users\thais.pereira_sankhy\Desktop\Thaís\Thaís - Backup\Sankhya\Fiscal Contábil\QA\QA\treinamento_robot\treinamento_robot\Ex01.robot">
+<test id="s1-t1" name="Imprimi Lista de Frutas" line="18">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${FRUTAS}[0]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-21T18:33:40.715089" elapsed="0.001007"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${FRUTAS}[1]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-21T18:33:40.716096" elapsed="0.001123"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${FRUTAS}[2]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-21T18:33:40.717219" elapsed="0.000880"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${FRUTAS}[3]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-21T18:33:40.718099" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2024-02-21T18:33:40.713940" elapsed="0.005156"/>
+</test>
+<status status="PASS" start="2024-02-21T18:33:40.686035" elapsed="0.035062"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ex01">Ex01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
