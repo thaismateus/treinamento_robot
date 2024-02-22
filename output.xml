@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-21T18:33:40.683271" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-22T17:52:16.658519" rpa="false" schemaversion="5">
 <suite id="s1" name="Ex01" source="C:\Users\thais.pereira_sankhy\Desktop\Thaís\Thaís - Backup\Sankhya\Fiscal Contábil\QA\QA\treinamento_robot\treinamento_robot\Ex01.robot">
-<test id="s1-t1" name="Imprimi Lista de Frutas" line="18">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${FRUTAS}[0]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-21T18:33:40.715089" elapsed="0.001007"/>
+<test id="s1-t1" name="Criar e-mail contendo nome sobrenome e idade" line="32">
+<kw name="Criar um e-mail">
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-02-22T17:52:16.810857" level="INFO">${EMAIL_COMPLETO} = Thais_Mateus_32@robot.com</msg>
+<var>${EMAIL_COMPLETO}</var>
+<arg>${NOME}_${SOBRENOME}_${IDADE}@robot.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-02-22T17:52:16.809858" elapsed="0.000999"/>
+</kw>
+<return>
+<value>${EMAIL_COMPLETO}</value>
+<status status="PASS" start="2024-02-22T17:52:16.811598" elapsed="0.000000"/>
+</return>
+<msg time="2024-02-22T17:52:16.811598" level="INFO">${RETORNO} = Thais_Mateus_32@robot.com</msg>
+<var>${RETORNO}</var>
+<arg>${PESSOA}[nome]</arg>
+<arg>${PESSOA}[sobrenome]</arg>
+<arg>${PESSOA}[idade]</arg>
+<status status="PASS" start="2024-02-22T17:52:16.807139" elapsed="0.004459"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${FRUTAS}[1]</arg>
+<arg>${RETORNO}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-21T18:33:40.716096" elapsed="0.001123"/>
+<status status="PASS" start="2024-02-22T17:52:16.812599" elapsed="0.002009"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${FRUTAS}[2]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-21T18:33:40.717219" elapsed="0.000880"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${FRUTAS}[3]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-21T18:33:40.718099" elapsed="0.000997"/>
-</kw>
-<status status="PASS" start="2024-02-21T18:33:40.713940" elapsed="0.005156"/>
+<status status="PASS" start="2024-02-22T17:52:16.805422" elapsed="0.010260"/>
 </test>
-<status status="PASS" start="2024-02-21T18:33:40.686035" elapsed="0.035062"/>
+<status status="PASS" start="2024-02-22T17:52:16.665414" elapsed="0.157663"/>
 </suite>
 <statistics>
 <total>
@@ -37,5 +41,6 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2024-02-22T17:52:16.637423" level="WARN">Error in file 'C:\Users\thais.pereira_sankhy\Desktop\Thaís\Thaís - Backup\Sankhya\Fiscal Contábil\QA\QA\treinamento_robot\treinamento_robot\Ex01.robot' on line 14: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>

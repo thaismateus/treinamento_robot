@@ -1,33 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-21T18:34:18.168985" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.8 on win32)" generated="2024-02-22T18:45:29.174939" rpa="false" schemaversion="5">
 <suite id="s1" name="Treinamento Robot" source="C:\Users\thais.pereira_sankhy\Desktop\Thaís\Thaís - Backup\Sankhya\Fiscal Contábil\QA\QA\treinamento_robot\treinamento_robot">
 <suite id="s1-s1" name="Ex01" source="C:\Users\thais.pereira_sankhy\Desktop\Thaís\Thaís - Backup\Sankhya\Fiscal Contábil\QA\QA\treinamento_robot\treinamento_robot\Ex01.robot">
-<test id="s1-s1-t1" name="Imprimi Lista de Frutas" line="18">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${FRUTAS}[0]</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-21T18:34:18.214211" elapsed="0.000996"/>
+<test id="s1-s1-t1" name="Imprimi países" line="52">
+<kw name="5 países">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-02-22T18:45:29.306631" level="INFO">@{paises} = [ Brasil | Japão | China | Canada | EUA ]</msg>
+<var>@{paises}</var>
+<arg>Brasil</arg>
+<arg>Japão</arg>
+<arg>China</arg>
+<arg>Canada</arg>
+<arg>EUA</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-02-22T18:45:29.305446" elapsed="0.004894"/>
 </kw>
+<for flavor="IN">
+<iter>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${FRUTAS}[1]</arg>
+<arg>${pais}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-21T18:34:18.216210" elapsed="0.001263"/>
+<status status="PASS" start="2024-02-22T18:45:29.316213" elapsed="0.013932"/>
 </kw>
+<var name="${pais}">Brasil</var>
+<status status="PASS" start="2024-02-22T18:45:29.315321" elapsed="0.015831"/>
+</iter>
+<iter>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${FRUTAS}[2]</arg>
+<arg>${pais}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-21T18:34:18.218210" elapsed="0.001002"/>
+<status status="PASS" start="2024-02-22T18:45:29.334140" elapsed="0.002800"/>
 </kw>
+<var name="${pais}">Japão</var>
+<status status="PASS" start="2024-02-22T18:45:29.332159" elapsed="0.006823"/>
+</iter>
+<iter>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${FRUTAS}[3]</arg>
+<arg>${pais}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-21T18:34:18.221284" elapsed="0.001926"/>
+<status status="PASS" start="2024-02-22T18:45:29.340967" elapsed="0.002990"/>
 </kw>
-<status status="PASS" start="2024-02-21T18:34:18.213211" elapsed="0.011004"/>
+<var name="${pais}">China</var>
+<status status="PASS" start="2024-02-22T18:45:29.339960" elapsed="0.004207"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${pais}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-22T18:45:29.345142" elapsed="0.004425"/>
+</kw>
+<var name="${pais}">Canada</var>
+<status status="PASS" start="2024-02-22T18:45:29.345142" elapsed="0.005384"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${pais}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-22T18:45:29.354521" elapsed="0.005996"/>
+</kw>
+<var name="${pais}">EUA</var>
+<status status="PASS" start="2024-02-22T18:45:29.351533" elapsed="0.008984"/>
+</iter>
+<var>${pais}</var>
+<value>@{paises}</value>
+<status status="PASS" start="2024-02-22T18:45:29.311319" elapsed="0.050206"/>
+</for>
+<status status="PASS" start="2024-02-22T18:45:29.303644" elapsed="0.058895"/>
+</kw>
+<status status="PASS" start="2024-02-22T18:45:29.299965" elapsed="0.064547"/>
 </test>
-<status status="PASS" start="2024-02-21T18:34:18.209208" elapsed="0.017001"/>
+<status status="PASS" start="2024-02-22T18:45:29.289216" elapsed="0.078326"/>
 </suite>
-<status status="PASS" start="2024-02-21T18:34:18.175011" elapsed="0.053197"/>
+<status status="PASS" start="2024-02-22T18:45:29.197617" elapsed="0.176155"/>
 </suite>
 <statistics>
 <total>
@@ -41,5 +85,6 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2024-02-22T18:45:29.138020" level="WARN">Error in file 'C:\Users\thais.pereira_sankhy\Desktop\Thaís\Thaís - Backup\Sankhya\Fiscal Contábil\QA\QA\treinamento_robot\treinamento_robot\Ex01.robot' on line 14: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
